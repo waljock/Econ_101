@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema targetNamespace="http://www.federalreserve.gov/structure/compact/G19_CCOUT" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://www.federalreserve.gov/structure/compact/G19_CCOUT" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:frb="http://www.federalreserve.gov/structure/compact/common">
+ <xs:import namespace="http://www.federalreserve.gov/structure/compact/common" schemaLocation="frb_common.xsd" />
+ <xs:element name="Series" type="SeriesType" substitutionGroup="frb:Series" />
+ <xs:complexType name="SeriesType">
+  <xs:complexContent>
+   <xs:extension base="frb:SeriesType">
+    <xs:attribute name="SA" type="CL_SA" use="required" />
+    <xs:attribute name="DATAREP" type="CL_CCOUT_DATAREP" use="required" />
+    <xs:attribute name="HOLDER" type="CL_CCOUT_HOLDER" use="required" />
+    <xs:attribute name="CREDTYP" type="CL_CCOUT_CREDTYP" use="required" />
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+ <xs:simpleType name="CL_SA">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="SA">
+    <xs:annotation>
+     <xs:documentation>Seasonally adjusted</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="NSA">
+    <xs:annotation>
+     <xs:documentation>Not seasonally adjusted</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpleType>
+ <xs:simpleType name="CL_CCOUT_DATAREP">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="PCTCHG">
+    <xs:annotation>
+     <xs:documentation>Percent Change</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="MILLDOLL">
+    <xs:annotation>
+     <xs:documentation>Millions of dollars</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="BILLDOLL">
+    <xs:annotation>
+     <xs:documentation>Billions of dollars</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpleType>
+ <xs:simpleType name="CL_CCOUT_HOLDER">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="ALL">
+    <xs:annotation>
+     <xs:documentation>All holders</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="DEPOINST">
+    <xs:annotation>
+     <xs:documentation>Depository institutions</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="COMBANK">
+    <xs:annotation>
+     <xs:documentation>Commercial banks</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="FINCO">
+    <xs:annotation>
+     <xs:documentation>Finance companies</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="CRUNION">
+    <xs:annotation>
+     <xs:documentation>Credit unions</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="FEDGOVT">
+    <xs:annotation>
+     <xs:documentation>Federal government and Sallie Mae</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="NONPROF">
+    <xs:annotation>
+     <xs:documentation>Nonprofit and educational institutions</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="SAVING">
+    <xs:annotation>
+     <xs:documentation>Savings institutions</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="NONFIN">
+    <xs:annotation>
+     <xs:documentation>Nonfinancial business</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="POOLS">
+    <xs:annotation>
+     <xs:documentation>Pools of securitized assets</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpleType>
+ <xs:simpleType name="CL_CCOUT_CREDTYP">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="TOTAL">
+    <xs:annotation>
+     <xs:documentation>All credit types</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="REV">
+    <xs:annotation>
+     <xs:documentation>Revolving credit</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="NONREV">
+    <xs:annotation>
+     <xs:documentation>Nonrevolving credit</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="STUDENT">
+    <xs:annotation>
+     <xs:documentation>Nonrevolving credit</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+   <xs:enumeration value="MOTOR">
+    <xs:annotation>
+     <xs:documentation>Nonrevolving credit</xs:documentation>
+    </xs:annotation>
+   </xs:enumeration>
+  </xs:restriction>
+ </xs:simpleType>
+</xs:schema>

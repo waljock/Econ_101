@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(readxl)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(data.table)\nlibrary(formattable)\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(ggrepel)\n\nd <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ.csv')\n\nd$ddate <- format(d$TIME_PERIOD, format=\"%Y%m%d\")\n\ns <-subset(d,(d$Series == 'DTCOLHE_N.M') & (d$OBS_VALUE != 'NA'))\n\nj = ggplot(s,aes(OBS_VALUE),group=1)\nj\n\n",
+    "created" : 1518034025976.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1065534072",
+    "id" : "DEF7496D",
+    "lastKnownWriteTime" : 1518036393,
+    "last_content_update" : 1518036393636,
+    "path" : "~/Econ_101/Econ_101/RdataTransforms.R",
+    "project_path" : "RdataTransforms.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

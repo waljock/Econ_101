@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(readxl)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(data.table)\nlibrary(formattable)\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(ggrepel)\n\ng <- unique(read_xlsx(\"C:/Users/HMA03468/Desktop/profitx_files/Output/WORK_CPU_COMP.xlsx\"))\n\ng$Week <- gsub(\"02Jan18\",\"30Dec17\", g$Week)\ng$Incentive_Spending_Unit <-currency(g$Incentive_Spending_Unit, digit=0L)\ng$CPU_LEASE <-currency(g$CPU_LEASE, digit=0L)\n\ng$gdate <- as.Date(g$Week, \"%d %b %y\")\n\ngr <- unique(g$Hyundai_Subsegment)\n\n\ng$WeekNum <- strftime(g$gdate,format = \"%Y%V\")\n\ng2 <-subset(g, (WeekNum >= 201752) & (Model_Year == 2018))# & (Hyundai_Region == 'Eastern')) \n\nmid <-    subset(g2, (Hyundai_Subsegment == 'Midsize Car'))\ncom <-    subset(g2, Hyundai_Subsegment == 'Compact Car')\ncomSUV <- subset(g2, Hyundai_Subsegment == 'Compact SUV')\nscomSUV <-subset(g2, Hyundai_Subsegment == 'Sub-Compact SUV')\n\nfor (i in gr) {\n  print(i)\n  \n  j <- subset(g2, (Hyundai_Subsegment ==  i))\n  \n  s= ggplot(aes(x=WeekNum, y=CPU_LEASE, color = Hyundai_Region),  data=j)+\n    geom_line(aes(group= Hyundai_Region),size=1)+\n    geom_text_repel(aes(label=CPU_LEASE),size = 2,  color = 'black', segment.color = 'grey50',\n                    segment.size=0.25)+\n    facet_grid(. ~Model )+\n    theme(legend.position = 'bottom',axis.text.x=element_text(size=6, angle=90),\n          legend.title=element_text(size=8) , legend.text=element_text(size=8))\n  \n  m='tiff'\n  \n  ggsave(filename = paste(i,m,sep=\".\"), plot=s, width=10, height = 6)\n}\n\n",
+    "created" : 1518034043630.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3159946351",
+    "id" : "335C507E",
+    "lastKnownWriteTime" : 1517958333,
+    "last_content_update" : 1517958333,
+    "path" : "~/R_Data/PINdata/PINdataExtractLoop.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

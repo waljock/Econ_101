@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "library(readxl)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(data.table)\nlibrary(formattable)\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(ggrepel)\n\nd <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ.csv')\n\nd$ddate <- format(d$TIME_PERIOD, format=\"%Y%m%d\")\n\ns <-subset(d,(d$Series == 'DTCOLHE_N.M') & (d$OBS_VALUE != 'NA'))\n\nj = ggplot(s,aes(OBS_VALUE),group=1)\nj\n\n",
+    "contents" : "library(readxl)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(data.table)\nlibrary(formattable)\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(ggrepel)\n\nd <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ.csv')\n\n\n\ns <-subset(d,(d$Series == 'DTCOLHE_N.M') & (d$OBS_VALUE != 'NA'))\ns$ddate <- as.Date(s$TIME_PERIOD, format=\"%Y-%m-%d\")\n\nggplot(s,aes(ddate, OBS_VALUE))+geom_point()+\n  scale_x_date(date_labels = \"%Y\")\n\n\n",
     "created" : 1518034025976.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1065534072",
+    "hash" : "3238976757",
     "id" : "DEF7496D",
-    "lastKnownWriteTime" : 1518036393,
-    "last_content_update" : 1518036393636,
+    "lastKnownWriteTime" : 1518057639,
+    "last_content_update" : 1518057639135,
     "path" : "~/Econ_101/Econ_101/RdataTransforms.R",
     "project_path" : "RdataTransforms.R",
     "properties" : {

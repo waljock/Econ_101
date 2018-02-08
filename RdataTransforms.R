@@ -9,10 +9,12 @@ library(ggrepel)
 
 d <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ.csv')
 
-d$ddate <- format(d$TIME_PERIOD, format="%Y%m%d")
+
 
 s <-subset(d,(d$Series == 'DTCOLHE_N.M') & (d$OBS_VALUE != 'NA'))
+s$ddate <- as.Date(s$TIME_PERIOD, format="%Y-%m-%d")
 
-j = ggplot(s,aes(OBS_VALUE),group=1)
-j
+ggplot(s,aes(ddate, OBS_VALUE))+geom_point()+
+  scale_x_date(date_labels = "%Y")
+
 

@@ -18,12 +18,39 @@ root = tree.getroot()
 
 #for dataset in root.findall('*'):
 #    print(dataset)
-mydf = []   
+mydf2 = []   
  
-for series in root.findall('{http://www.federalreserve.gov/structure/compact/common/DataSet}Series'):
-    print(series.attrib)
+for series in root.findall('.//{http://www.federalreserve.gov/structure/compact/H15_H15}Series'):
+    
    
-
+    seriesobj = series.attrib
+    
+    seriesName =  seriesobj['SERIES_NAME']
+    seriesInstrument =  seriesobj['INSTRUMENT']
+    seriesUnit = seriesobj['UNIT']
+    seriesMult = seriesobj['UNIT_MULT']
+    seriesMat = seriesobj['MATURITY']
+    seriesCurr = seriesobj['CURRENCY']
+    seriesFreq = seriesobj['FREQ']
+    
+    for obs in series:#.findall('{http://www.federalreserve.gov/structure/compact/G19_CCOUT}Obs'):
+       # print (obs.attrib)
+        obsobj = obs.attrib
+        obsobj['Series'] = seriesName
+        obsobj['Instru'] = seriesInstrument
+        obsobj['Unit'] = seriesUnit
+        obsobj['Mult'] = seriesMult
+        obsobj['Mat'] = seriesMat
+        obsobj['Curr'] = seriesCurr
+        obsobj['Freq'] = seriesFreq
+        
+        
+        
+    
+        mydf2.append(obsobj)
+    
+df = pd.DataFrame(mydf2)   
+df.to_csv('econ-rates.csv')  
     
 
     

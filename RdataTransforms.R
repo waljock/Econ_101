@@ -17,5 +17,7 @@ s <-subset(d,(d$OBS_VALUE != '-9999') & (d$OBS_VALUE != 'NA') & (d$ddate >= "200
 ggplot(s,aes(ddate, OBS_VALUE))+geom_line(aes(color=Series))+
   scale_x_date(date_labels = "%Y%m") + theme(legend.position="none")
 
+print(unique(s$Series))
+
 
 

@@ -10,39 +10,39 @@ import pandas as pd
 
 #e = xml.etree.ElementTree.parse('G19_data.xml').getroot()
 
-tree = ET.parse('H15_struct.xml')
+tree = ET.parse('H15_data.xml')
 root = tree.getroot()
 
 #print(root.tag)
 #print(root.attrib)
 
 for dataset in root.findall('*'):
-#    print(dataset)
+    print(dataset)
     pass
     for y in dataset:
-      #  print(y)
-      pass
+      print(dataset[0].text)
+#      pass
       for j in y:
-          #print(j)
-          pass
+#         print(y[2].text)
+#          pass
           for t in j:
-          #    print(t)
+#              print(j[0].text)
               pass
-              for h in t:
-                 # pass
-                 print(h.attrib)
-       #           for o in h:
-        #              print(o)
-          
-      
-        
-mydf2 = []   
- 
-for series in root.findall('.//{http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure}Attribute'):
-    
-   
-    seriesobj2 = series.attrib
-    #print(seriesobj2)
+#              for h in t:
+#                 # pass
+#                 print(h.text)
+#       #           for o in h:
+#        #              print(o)
+#          
+#      
+#        
+#mydf2 = []   
+# 
+#for series in root.findall('.//{http://www.SDMX.org/resources/SDMXML/schemas/v1_0/structure}CodeLists'):
+#    
+#   
+#    seriesobj2 = series.attrib
+#    #print(seriesobj2)
     
 #    seriesName =  seriesobj['SERIES_NAME']
 #    seriesInstrument =  seriesobj['INSTRUMENT']

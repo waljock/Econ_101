@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2546993408",
+    "hash" : "2604543891",
     "id" : "DEF7496D",
-    "lastKnownWriteTime" : 1519693621,
-    "last_content_update" : 1519693621310,
+    "lastKnownWriteTime" : 1521227052,
+    "last_content_update" : 1521227052382,
     "path" : "~/Econ_101/Econ_101/RdataTransforms.R",
     "project_path" : "RdataTransforms.R",
     "properties" : {
+        "cursorPosition" : "15,70",
+        "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
     "relative_order" : 1,

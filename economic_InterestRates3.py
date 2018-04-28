@@ -63,8 +63,11 @@ for series in root.findall('.//{http://www.federalreserve.gov/structure/compact/
     
         mydf2.append(obsobj)
     
-df = pd.DataFrame(mydf2)   
-df.to_csv('econ-rates.csv')  
+df = pd.DataFrame(mydf2)  
+df['date']= pd.to_datetime(df['TIME_PERIOD'])
+
+df2 = df[(df['date'] > '2015-01-01')]
+df2.to_csv('econ-rates.csv')  
     
 
     

@@ -20,10 +20,10 @@ for dataset in root.findall('*'):
     print(dataset)
     pass
     for y in dataset:
-      print(dataset[0].text)
+#      print(dataset[0].text)
 #      pass
       for j in y:
-#         print(y[2].text)
+          print(y[0].text)
 #          pass
           for t in j:
 #              print(j[0].text)

@@ -7,13 +7,15 @@ library(tidyverse)
 library(ggthemes)
 library(ggrepel)
 
-d <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ-rates.csv')
+d <- read.csv('econ-rates.csv')
 d$ddate <- as.Date(d$TIME_PERIOD, format="%Y-%m-%d")
+d3 <- d[c(3,10)]
+d4 <- unique(d3)
 
-lst <- list("RIFSPBLP_N.D","RIFSPBLP_N.D","RIFSRP_F02_N.D", "RIFSPFF_N.D")
+lst <- list("RIFSPPFAAD30_N.B","RIFSPPFAAD90_N.B","RIFSPBLP_N.A", "RIFLGFCY05_N.B")
 
 #s <-subset(d,((d$Series == 'RIFSPPNAAD60_N.WF') | d$Series == 'RIFSPBLP_N.B')& (d$OBS_VALUE != '-9999'))
-s <-subset(d,(d$OBS_VALUE != '-9999') &  (d$OBS_VALUE != 'NA') &(d$ddate >= "2010-01-01") &
+s <-subset(d,(d$OBS_VALUE != '-9999') &  (d$OBS_VALUE != 'NA') &
              (d$Series  %in% lst))
 
 ggplot(s,aes(ddate, OBS_VALUE))+geom_line(aes(color=Instru))+

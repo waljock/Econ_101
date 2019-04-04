@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>  <message:MessageGroup xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message"  xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/common"  xmlns:frb="http://www.federalreserve.gov/structure/compact/common"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message SDMXMessage.xsd http://www.federalreserve.gov/structure/compact/common frb_common.xsd"><message:Header xmlns:message="http://www.SDMX.org/resources/SDMXML/schemas/v1_0/message">
+    <message:ID>H15</message:ID>
+    <message:Test>false</message:Test>
+    <message:Name>H.15 Selected Interest Rates</message:Name>
+    <message:Prepared>2019-04-01T15:40:03</message:Prepared>
+    <message:Sender id="FRB">
+      <message:Name>Federal Reserve Board</message:Name>
+      <message:Contact>
+        <message:Name>Banking Analysis Section</message:Name>
+        <message:Email>MA-BA-Releases@frb.gov</message:Email>
+      </message:Contact>
+    </message:Sender>
+  </message:Header>
+<frb:DataSet id="H15" xmlns:kf="http://www.federalreserve.gov/structure/compact/H15_H15" xsi:schemaLocation="http://www.federalreserve.gov/structure/compact/H15_H15 H15_H15.xsd"  > 
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="TCMNOM" MATURITY="M3" SERIES_NAME="RIFLGFCM03_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>3-month Treasury constant maturity</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Market yield on U.S. Treasury securities at 3-month
+  constant maturity, quoted on investment basis</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.43" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.59" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.73" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.79" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.90" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.94" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.99" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.07" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.17" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.29" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.37" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.42" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.44" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.45" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="TCMNOM" MATURITY="Y1" SERIES_NAME="RIFLGFCY01_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>1-year Treasury constant maturity</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Market yield on U.S. Treasury securities at 1-year
+  constant maturity, quoted on investment basis</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.80" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.96" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.06" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.15" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.27" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.33" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.39" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.45" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.56" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.65" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.70" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.66" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.58" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.55" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.49" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="TCMNOM" MATURITY="Y3" SERIES_NAME="RIFLGFCY03_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>3-year Treasury constant maturity</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Market yield on U.S. Treasury securities at 3-year
+  constant maturity, quoted on investment basis</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.15" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.36" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.42" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.52" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.66" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.65" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.70" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.71" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.84" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.94" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.91" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.67" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.52" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.48" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.37" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="TCMNOM" MATURITY="Y5" SERIES_NAME="RIFLGFCY05_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>5-year Treasury constant maturity</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Market yield on U.S. Treasury securities at 5-year
+  constant maturity, quoted on investment basis</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.38" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.60" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.63" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.70" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.82" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.78" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.78" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.77" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.89" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3.00" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.95" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.68" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.54" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.49" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.37" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="TCMNOM" MATURITY="Y10" SERIES_NAME="RIFLGFCY10_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>10-year Treasury constant maturity</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Market yield on U.S. Treasury securities at 10-year
+  constant maturity, quoted on investment basis</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.58" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.86" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.84" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.87" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.98" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.91" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.89" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.89" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3.00" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3.15" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="3.12" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.83" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.71" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.68" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.57" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+<kf:Series CURRENCY="NA" FREQ="129" INSTRUMENT="FF" MATURITY="O" SERIES_NAME="RIFSPFF_N.M" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
+<frb:Annotations>
+<common:Annotation>
+<common:AnnotationType>Short Description</common:AnnotationType>
+<common:AnnotationText>Federal funds</common:AnnotationText>
+</common:Annotation>
+<common:Annotation>
+<common:AnnotationType>Long Description</common:AnnotationType>
+<common:AnnotationText>Federal funds effective rate</common:AnnotationText>
+</common:Annotation>
+</frb:Annotations>
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.41" TIME_PERIOD="2018-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.42" TIME_PERIOD="2018-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.51" TIME_PERIOD="2018-03-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.69" TIME_PERIOD="2018-04-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.70" TIME_PERIOD="2018-05-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.82" TIME_PERIOD="2018-06-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.91" TIME_PERIOD="2018-07-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.91" TIME_PERIOD="2018-08-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="1.95" TIME_PERIOD="2018-09-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.19" TIME_PERIOD="2018-10-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.20" TIME_PERIOD="2018-11-30" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.27" TIME_PERIOD="2018-12-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.40" TIME_PERIOD="2019-01-31" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.40" TIME_PERIOD="2019-02-28" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-03-31" />
+</kf:Series>
+</frb:DataSet>
+</message:MessageGroup>

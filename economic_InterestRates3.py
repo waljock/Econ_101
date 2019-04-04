@@ -10,7 +10,7 @@ import pandas as pd
 
 #e = xml.etree.ElementTree.parse('G19_data.xml').getroot()
 
-tree = ET.parse('H15_data.xml')
+tree = ET.parse('FRB_H15.xml')
 root = tree.getroot()
 
 #print(root.tag)
@@ -66,7 +66,7 @@ for series in root.findall('.//{http://www.federalreserve.gov/structure/compact/
 df = pd.DataFrame(mydf2)  
 df['date']= pd.to_datetime(df['TIME_PERIOD'])
 
-df2 = df[(df['date'] > '2015-01-01')]
+df2 = df[(df['date'] > '2012-01-01')]
 df2.to_csv('econ-rates.csv')  
     
 

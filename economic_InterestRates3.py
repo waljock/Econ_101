@@ -7,10 +7,31 @@ Created on Tue Feb  6 16:05:02 2018
 
 import xml.etree.ElementTree as ET
 import pandas as pd
+import os
 
-#e = xml.etree.ElementTree.parse('G19_data.xml').getroot()
+import wget
 
-tree = ET.parse('FRB_H15.xml')
+
+
+
+
+site = "https://www.federalreserve.gov/datadownload/Output.aspx?rel=H15&series=42196c5860f0cc408e8603dd4791139c&lastobs=1000&from=&to=&filetype=sdmx&label=include&layout=seriescolumn"
+
+
+filename = 'C:\\Users\\HMA03468\\Documents\\Econ_101\\Econ_101\\FRB_H15.xml'
+
+try:
+    os.remove(filename)
+    print ("TxtFileRemoved")
+except:
+    print ("FILE DOES NOT EXIST OR OTHER ERROR")
+    pass
+
+wget.download(site, filename)
+
+#https://www.federalreserve.gov/datadownload/Output.aspx?rel=H15&series=42196c5860f0cc408e8603dd4791139c&lastobs=1000&from=&to=&filetype=sdmx&label=include&layout=seriescolumn
+
+tree = ET.parse(filename)
 root = tree.getroot()
 
 #print(root.tag)

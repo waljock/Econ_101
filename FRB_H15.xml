@@ -2,7 +2,7 @@
     <message:ID>H15</message:ID>
     <message:Test>false</message:Test>
     <message:Name>H.15 Selected Interest Rates</message:Name>
-    <message:Prepared>2019-04-03T15:40:02</message:Prepared>
+    <message:Prepared>2019-04-05T15:40:02</message:Prepared>
     <message:Sender id="FRB">
       <message:Name>Federal Reserve Board</message:Name>
       <message:Contact>
@@ -24,8 +24,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.02" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.02" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.02" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.01" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.01" TIME_PERIOD="2015-06-09" />
@@ -1024,6 +1022,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.43" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.42" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.43" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.42" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.43" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="M6" SERIES_NAME="RIFLGFCM06_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -1037,8 +1037,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.07" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.08" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.08" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.09" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.08" TIME_PERIOD="2015-06-09" />
@@ -2037,6 +2035,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.44" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.46" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.45" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.45" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.46" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="Y1" SERIES_NAME="RIFLGFCY01_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -2050,8 +2050,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.26" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="0.27" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.29" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.27" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="0.27" TIME_PERIOD="2015-06-09" />
@@ -3050,6 +3048,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.40" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="Y3" SERIES_NAME="RIFLGFCY03_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -3063,8 +3063,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="1.07" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="1.04" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.13" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.09" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.12" TIME_PERIOD="2015-06-09" />
@@ -4063,6 +4061,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.21" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.29" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.26" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.29" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.29" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="Y5" SERIES_NAME="RIFLGFCY05_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -4076,8 +4076,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="1.69" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="1.65" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.75" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.72" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="1.74" TIME_PERIOD="2015-06-09" />
@@ -5076,6 +5074,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.23" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.31" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.28" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.32" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.32" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="Y10" SERIES_NAME="RIFLGFCY10_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -5089,8 +5089,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="2.38" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="2.31" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.39" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.42" TIME_PERIOD="2015-06-09" />
@@ -6089,6 +6087,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.41" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.49" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.48" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.52" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.51" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 <kf:Series CURRENCY="NA" FREQ="9" INSTRUMENT="TCMNOM" MATURITY="Y30" SERIES_NAME="RIFLGFCY30_N.B" UNIT="Percent:_Per_Year" UNIT_MULT="1"  > 
 <frb:Annotations>
@@ -6102,8 +6102,6 @@
   constant maturity, quoted on investment basis</common:AnnotationText>
 </common:Annotation>
 </frb:Annotations>
-<frb:Obs OBS_STATUS="A" OBS_VALUE="3.11" TIME_PERIOD="2015-06-03" />
-<frb:Obs OBS_STATUS="A" OBS_VALUE="3.03" TIME_PERIOD="2015-06-04" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="3.11" TIME_PERIOD="2015-06-05" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="3.11" TIME_PERIOD="2015-06-08" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="3.15" TIME_PERIOD="2015-06-09" />
@@ -7102,6 +7100,8 @@
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.81" TIME_PERIOD="2019-03-29" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.89" TIME_PERIOD="2019-04-01" />
 <frb:Obs OBS_STATUS="A" OBS_VALUE="2.88" TIME_PERIOD="2019-04-02" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.93" TIME_PERIOD="2019-04-03" />
+<frb:Obs OBS_STATUS="A" OBS_VALUE="2.92" TIME_PERIOD="2019-04-04" />
 </kf:Series>
 </frb:DataSet>
 </message:MessageGroup>

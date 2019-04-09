@@ -8,6 +8,9 @@ Created on Tue Feb  6 16:05:02 2018
 import xml.etree.ElementTree as ET
 import pandas as pd
 import os
+import bokeh as bk
+from bokeh.plotting import figure
+from bokeh.models import ColumnDataSource
 
 import wget
 
@@ -89,11 +92,8 @@ df['date']= pd.to_datetime(df['TIME_PERIOD'])
 
 df2 = df[(df['date'] > '2012-01-01')]
 df2.to_csv('econ-rates.csv')  
-    
 
-    
-    
-    
+
 
 #for child in root:
 #    pass

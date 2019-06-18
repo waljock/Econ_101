@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518034025976.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2513907486",
+    "id" : "DEF7496D",
+    "lastKnownWriteTime" : 1526690056,
+    "last_content_update" : 1526690056512,
+    "path" : "~/Econ_101/Econ_101/RdataTransforms.R",
+    "project_path" : "RdataTransforms.R",
+    "properties" : {
+        "cursorPosition" : "32,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

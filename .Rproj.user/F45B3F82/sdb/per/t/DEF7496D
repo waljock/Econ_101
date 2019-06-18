@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(readxl)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(data.table)\nlibrary(formattable)\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(ggrepel)\n\nd <- read.csv('C:/Users/HMA03468/Documents/Econ_101/Econ_101/econ-rates.csv')\nd$ddate <- as.Date(d$TIME_PERIOD, format=\"%Y-%m-%d\")\n\n\n#s <-subset(d,((d$Series == 'RIFSPPNAAD60_N.WF') | d$Series == 'RIFSPBLP_N.B')& (d$OBS_VALUE != '-9999'))\ns <-subset(d,(d$OBS_VALUE != '-9999') & (d$OBS_VALUE != 'NA') & (d$ddate >= \"2007-01-01\"))\n\nggplot(s,aes(ddate, OBS_VALUE))+geom_line(aes(color=Series))+\n  scale_x_date(date_labels = \"%Y%m\") + theme(legend.position=\"none\")\n\nprint(unique(s$Series))\n\n\n\n",
+    "created" : 1518034025976.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2546993408",
+    "id" : "DEF7496D",
+    "lastKnownWriteTime" : 1519693621,
+    "last_content_update" : 1519693621310,
+    "path" : "~/Econ_101/Econ_101/RdataTransforms.R",
+    "project_path" : "RdataTransforms.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

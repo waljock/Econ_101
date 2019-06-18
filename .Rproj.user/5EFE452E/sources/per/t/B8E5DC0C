@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559176496458.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1207625918",
+    "id" : "B8E5DC0C",
+    "lastKnownWriteTime" : 1559589495,
+    "last_content_update" : 1559589495685,
+    "path" : "~/Econ_101/Econ_101/shinyexample.R",
+    "project_path" : "shinyexample.R",
+    "properties" : {
+        "cursorPosition" : "35,21",
+        "scrollLine" : "12",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

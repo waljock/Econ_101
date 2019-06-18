@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559176642976.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F1C5659C",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1559176642976,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7907AFB5",
+        "caption" : "mar",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=mar&cache_key=7907AFB5",
+        "displayedObservations" : 2468674,
+        "environment" : "",
+        "object" : "mar",
+        "preview" : 0,
+        "totalObservations" : 2468674,
+        "variables" : 15
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

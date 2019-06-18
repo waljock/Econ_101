@@ -8,9 +8,6 @@ Created on Tue Feb  6 16:05:02 2018
 import xml.etree.ElementTree as ET
 import pandas as pd
 import os
-import bokeh as bk
-from bokeh.plotting import figure
-from bokeh.models import ColumnDataSource
 import wget
 
 site = "https://www.federalreserve.gov/datadownload/Output.aspx?rel=H15&series=42196c5860f0cc408e8603dd4791139c&lastobs=1000&from=&to=&filetype=sdmx&label=include&layout=seriescolumn"
